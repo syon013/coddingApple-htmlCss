@@ -1,0 +1,33 @@
+.profile{
+    width:200px; 
+    display:block; 
+    margin-left : auto; 
+    margin-right : auto
+}
+
+.profile-userName{
+    color:blue; 
+    font-size:40px; 
+    text-align:center; 
+    line-height: 5px;
+}
+
+.profile-userInfo{
+    text-align:center; 
+    font-size:20px;
+}
+
+.profile-userInfo span{
+    color:red; 
+    font-weight:900; 
+    line-height:1em;
+}
+
+.profile-userProfile{
+    border:1px 
+    solid black; 
+    padding:10px; 
+    background-color:blue; 
+    color:white;
+    text-align:center;
+}
