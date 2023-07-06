@@ -24,10 +24,13 @@
 }
 
 .profile-userProfile{
-    border:1px 
-    solid black; 
+    border-radius:5px;
     padding:10px; 
-    background-color:blue; 
+    margin : 10px;
+    margin-left : auto;
+    margin-right : auto;
+    background-color:cadetblue; 
     color:white;
     text-align:center;
+    box-shadow: 5px 5px 5px 1px black;
 }
