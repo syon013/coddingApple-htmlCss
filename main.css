@@ -35,6 +35,38 @@
     box-shadow: 5px 5px 5px 1px black;
 }
 
+.navbar{
+    text-align: center;
+}
+
+.navbar li{
+    display : inline-block;
+    width : 100px;
+}
+
+.navbar i{
+    width : 40px;
+    height : 40px;
+    font-size : 30px;
+    text-align : center;
+    line-height : 40px;
+    border-radius : 5px;
+    border : 1px solid #eeee;
+    display : block;
+    margin-bottom : 10px;
+}
+
+.navbar a{
+    font-size : 20px;
+    color : black;
+    text-decoration: none;
+}
+
+.navbar p{
+    margin : 0px;
+    text-align: left;
+}
+
 .container{
     width : 100%;
 }
