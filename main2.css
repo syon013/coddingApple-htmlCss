@@ -1,0 +1,41 @@
+.main-background{
+    width: 100%;
+    height : 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/shoes.jpg);
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-position : center;
+    padding : 1px;
+}
+
+.main-title{
+    color: white;
+    font-size: 40px;
+    padding-left : 20px;
+    margin-top: 10px;
+    margin-bottom : 0px;
+}
+
+.main-content{
+    color: white;
+    font-size: 20px;
+    padding-left : 20px;
+    margin-top: 20px;
+}
+
+.main-button{
+    cursor: pointer;
+}
+
+.main-button p{
+    color : white;
+    font-size : 30px;
+    text-align : left;
+    margin-top : 5px;
+    margin-left : 20px;
+    padding : 8px;
+    display : inline-block;
+    border : 1px solid transparent;
+    border-radius : 30px;
+    background-color: blueviolet;
+}
