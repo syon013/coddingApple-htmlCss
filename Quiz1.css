@@ -1,0 +1,105 @@
+div{
+    box-sizing : border-box;
+}
+
+body{
+    margin : 0;
+}
+
+.container{
+    width : 500px;
+    height : 600px;
+    margin : 0;
+    border : 1px solid #ccc;
+    margin : 10px;
+}
+
+.main-header h4{
+    margin : 30px;
+    margin-bottom : 40px;
+    font-size: 30px;
+}
+
+.main-email h4{
+    margin-left : 40px;
+    margin-bottom : 5px;
+}
+
+.main-email input{
+    width:80%;
+    padding : 10px;
+    border : 0.3 solid black;
+    border-radius : 5px;
+    border-color : #ccc;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+    color : #ccc;
+}
+
+.main-name h4{
+    margin-left : 40px;
+    margin-bottom : 5px;
+}
+
+.main-name input{
+    width:35%;
+    padding : 10px;
+    border : 0.3 solid black;
+    border-radius : 5px;
+    border-color : #ccc;
+    display : inline-block;
+    color : #ccc;
+}
+
+.first{
+    float: left;
+    margin-left : 40px;
+    margin-bottom : 5px;
+    border-color : #ccc;
+}
+
+.last{
+    float: right;
+    margin-right : 40px;
+    border-color : #ccc;
+}
+.main-massage h4{
+    margin-left : 40px;
+    margin-bottom : 5px;
+}
+
+textarea{
+    width : 82%;
+    height : 150px;
+    margin-left : 40px;
+    border-radius: 5px;
+    border-color : #ccc;
+}
+
+.main-submit{
+}
+
+.main-submit input{
+    margin-left : 40px;
+    margin-top : 20px;
+    border-color : #ccc;
+}
+
+.main-submit button{
+    padding-left : 40px;
+    padding-right : 40px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    border : none;
+    border-radius : 5px;
+    margin-left : 40px;
+    margin-top : 30px;
+    font-size : 20px;
+    font-family : 'Roboto', sans-serif;
+    color : white;
+    background-color : orange;
+    position : relative;
+    left : 150px;
+    cursor : pointer;
+}
