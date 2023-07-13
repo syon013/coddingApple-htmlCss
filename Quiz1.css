@@ -103,3 +103,46 @@ textarea{
     left : 150px;
     cursor : pointer;
 }
+
+/* div, input, textarea, button{
+    box-sizing : border-box;
+}
+
+body{
+    margin : 0;
+}
+
+p{
+    margin : 0;
+}
+.form-background{
+    background-color : black;
+    padding : 30px;
+}
+
+.form-white{
+    background-color : white;
+    padding : 30px;
+    width : 80%;
+    max-width :600px;
+    margin : auto;
+}
+
+.form-input{
+	width : 100%;
+	padding : 10px;
+	font-size : 20px;
+	border : 1px solid black;
+	border-radius : 5px;
+}
+
+.w-100{
+    width : 100%;
+    padding : 10px;
+}
+
+.w-50{
+    width : 50%;
+    float : left;
+    padding : 10px;
+} */
