@@ -1,0 +1,89 @@
+body{
+    margin : 0;
+}
+
+table{
+    border-collapse : collapse;
+    background-color : white;
+    max-width : 700px;
+    border-radius: 5px;
+}
+
+table th{
+    font-size : 15px;
+    font-family: 'lilita_oneregular';
+    color : rgb(178, 204, 214);
+}
+
+h4{
+    font-size : 23px;
+    padding : 1px;
+    color:rgb(66,95,129);
+    margin-bottom : 20px;
+}
+
+h1{
+    padding : 0;
+    font-size : 15px;
+    vertical-align: top;
+    float : left;
+    margin-left : 20px;
+    margin-top : 10px;
+    font-family : 'lilita_oneregular';
+    color : black;
+}
+
+span{
+    font-size : 15px;
+    font-family : 'lilita_oneregular';
+    color : rgb(178, 204, 214);
+}
+
+th, td{
+    border-bottom : 1px solid rgb(178, 204, 214);
+    font-size : 15px;
+    padding : 10px;
+    color : rgb(178, 204, 214);
+}
+
+img{
+    width : 80px;
+    padding-left : 10px;
+    float : left;
+}
+
+.main-background{
+    background-color: rgb(178, 204, 214);
+    width : 100%;
+    height : 800px;
+    margin : 0;
+    padding : 1px;
+}
+
+.main-table{
+    text-align: left;
+    margin : 30px;
+}
+
+.main-foot{
+    font-size : 15px;
+    color : black;
+    margin-top : 30px;
+    padding : 10px;
+}
+
+.main-foot span{
+    color : black;
+}
+
+button{
+    position : fixed;
+    left : px;
+    margin-top : 20px;
+    padding : 20px;
+    background-color : rgb(19,55,97);
+    border : none;
+    border-radius : 5px;
+    color : white;
+    cursor: pointer;
+}
