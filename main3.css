@@ -55,21 +55,21 @@ img{
 .main-background{
     background-color: rgb(178, 204, 214);
     width : 100%;
-    height : 800px;
+    height : 500px;
     margin : 0;
     padding : 1px;
 }
 
 .main-table{
     text-align: left;
+    width : 600px;
     margin : 30px;
 }
 
 .main-foot{
     font-size : 15px;
     color : black;
-    margin-top : 30px;
-    padding : 10px;
+    margin-top : 20px;
 }
 
 .main-foot span{
@@ -77,13 +77,76 @@ img{
 }
 
 button{
-    position : fixed;
-    left : px;
-    margin-top : 20px;
+    /* float : right; */
     padding : 20px;
     background-color : rgb(19,55,97);
     border : none;
     border-radius : 5px;
     color : white;
     cursor: pointer;
+}
+
+.cart-background{
+    width : 100%;
+    background-color: #c2d3de;
+    padding : 30px;
+}
+
+.cart-table{
+    width : 100%;
+    max-width : 700px;
+    margin : auto;
+    background-color: white;
+    border-radius : 10px;
+}
+
+.cart-table td, .cart-table th{
+    padding : 15px;
+    border-bottom : 1px solid #c2d3de;   
+}
+
+.cart-table td:nth-child(2){
+    width : 400px; 
+}
+
+.btn{
+    padding : 15px;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+    background-color: coral;
+    color : white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: chocolate;
+}
+
+.btn:focus{
+    background-color: gray;
+}
+
+.btn:active{
+    background-color: brown;
+}
+
+.input-test{
+    font-size: 20px;
+}
+
+.input-test:focus{
+    background-color: #c2d3de;
+}
+
+.custom-link{
+    text-decoration: none;   
+}
+
+.custom-link:link{
+    color : black;
+}
+
+.custom-link:visited{
+    color : black;
 }
