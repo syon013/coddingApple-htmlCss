@@ -93,6 +93,7 @@ body{
     font-size : 19px;
     margin-top : 20px;
     padding : 20px;
+    z-index: 1;
 }
 
 form{
@@ -131,4 +132,42 @@ form{
 
 .nav-item{
     margin-right : 10px;
+}
+
+.test-container{
+    display : flex;
+    width : 100vw;
+    height : 20vw;
+    background : gray;
+    justify-content: center;
+    align-items: center;
+    display : flex;
+    position : relative;
+    top : 250px;
+}
+
+.test-item{
+    width : 100%;
+    padding : 10px;
+    margin : 10px;
+    text-align: center;
+}
+
+@media screen and (max-width : 800px){
+    .test-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .test-item{
+        flex-wrap : wrap;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .test-container{
+    }
+
+    .test-item{
+    }
 }
