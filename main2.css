@@ -167,6 +167,7 @@ form{
 .shop-item{
     width : 33%;
     padding : 10px;
+    padding-bottom : 0;
     overflow: hidden;
 }
 
@@ -180,22 +181,43 @@ form{
     color : white;
 }
 
+.overlay-wrap{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+    
+}
+
+.overlay-wrap:hover .overlay{
+        opacity : 0.5;
+        margin-top : 50%;
+        
+}
+
+.overlay-wrap:hover .overlay-black{
+    margin-top : 50%;
+}
+
 .overlay{
     position: absolute;
     width : 100%;
     height : 70%;
     background : rgba(0,0,0,0.5);
-    transform: translateY(100%);
     opacity: 0;
     transition : all 1s ease;
     bottom : 0;
     padding : 20px;
 }
 
-.overlay:hover{
-    opacity : 0.5;
-    transform: translateY(0);
+.overlay-black{
+    width : 100%;
+    height : 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin-top : 100%;
+    transition : all 1s ease;
 }
+
+
 
 
 @media screen and (max-width : 1200px){
