@@ -1,0 +1,40 @@
+body {
+    box-sizing: border-box;
+}
+
+.pt-bg{
+    background : #f7f9fc;
+}
+
+.pt-card-bg{
+    background-color : white;
+}
+
+.pt-proflie i, span{
+    color : #6fbaf8
+}
+
+.pt-btn{
+    background-color : #6fbaf8;
+    border : none;
+    width : 100px;
+}
+
+.card-border{
+    border-left : 2px solid #f7f9fc;
+}
+
+.pt-badge{
+    color : black;
+    background-color: white;
+    width: 20%;
+    padding : 16px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-border{
+        border : none;
+    }
+}
