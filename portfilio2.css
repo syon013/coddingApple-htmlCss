@@ -54,10 +54,6 @@ body {
     height : 300px;
 }
 
-.pt-w-25{
-    width : 25%;
-    height : 30%;
-}
 
 .pt-w-50{
     width : 60%;
@@ -79,11 +75,21 @@ body {
 
     .pt-w-20{
         width : 100%;
+        min-width : 500px;
         height : 100%;
+    }
+
+    .pt-w-25{
+        width : 100%;
+        min-width : 516px;
     }
     
     .pt-w-50{
         width : 100%;
+        min-width : 516px;
     }
 
+    .pt-dn{
+        display : none;
+    }
 }
