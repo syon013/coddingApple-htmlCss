@@ -1,0 +1,148 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+.list-container{
+    width : 100%;
+    height : 100%;
+    padding : 20px;
+}
+
+.list-box{
+    list-style : none;
+}
+
+.list-box{
+    li{
+        width : 50%;
+        height : 50px;
+        border : 1px solid #eee;
+        padding : 10px;
+        padding-left : 20px;
+    }
+
+    a{
+        font-size : 20px;
+        font-family : 'sans-serif';
+        font-weight: 300;
+    }
+
+    li:active{
+        background : rgb(0, 123, 255);
+        color : white;
+    }
+}
+
+%alert-box{
+    width : 80%;
+    height : 50px;
+    border-radius: 5px;
+    margin : 20px;
+    padding-left : 20px;
+    line-height: 50px;
+}
+
+.alert-box{
+    width : 100%;
+    height : 100%;
+    padding : 20px;
+
+    p{
+        vertical-align: middle;
+    }
+
+}
+
+.alert-box-green{
+    @extend %alert-box;
+    background : rgb(223, 240, 216);
+    color : rgb(140, 174, 148);
+    
+}
+
+.alert-box-blue{
+    @extend %alert-box;
+    background : rgb(216, 237, 246);
+    color : rgb(79, 125, 154);
+}
+
+.alert-box-yellow{
+    @extend %alert-box;
+    background : rgb(252, 248, 227);
+    color : rgb(157, 134, 85);
+}
+
+@mixin col($width){
+    width : $width;
+    height : 100%;
+    text-align : center;
+}
+
+.row{
+    width : 100%;
+    height : 100%;
+    padding : 20px;
+    display : flex;
+}
+
+.col-12{
+    @include col(100%);
+}
+
+.col-11{
+    @include col(91.66%);
+}
+
+.col-10{
+    @include col(83.33%);
+}
+
+.col-9{
+    @include col(75%);
+}
+
+.col-8{
+    @include col(66.66%);
+}
+
+.col-7{
+    @include col(58.33%);
+}
+
+.col-6{
+    @include col(50%);
+}
+
+.col-5{
+    @include col(41.66%);
+}
+
+.col-4{
+    @include col(33.33%);
+}
+
+.col-3{
+    @include col(25%);
+}
+
+.col-2{
+    @include col(16.66%);
+}
+
+.col-1{
+    @include col(8.33%);
+}
+
+
+
+@media (max-width : 768px){
+    .col-md-6{
+        @include col(50%);
+    }
+}
+
+
+
+
