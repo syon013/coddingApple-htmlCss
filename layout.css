@@ -1,13 +1,17 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .list-container {
   width: 100%;
   height: 100%;
   padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .list-box {
@@ -71,6 +75,149 @@
   display: flex;
 }
 
+.video-box {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.ani-box {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.ani-btn {
+  width: 100px;
+  height: 50px;
+  background: rgb(135, 206, 235);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.ani-btn:hover {
+  animation: ani-turn 0.5s;
+}
+
+.ani-plus {
+  font-size: 30px;
+}
+
+.ani-plus:hover {
+  animation-name: ani-plus-turn;
+  animation-duration: 1s;
+}
+
+/* 메뉴바 */
+.sidebar-container {
+  width: 50%;
+  height: 1000px;
+  background: black;
+  position: absolute;
+  z-index: 99;
+  transition: left 0.5s ease;
+  left: -150px;
+}
+.sidebar-container ul {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar-container li {
+  margin-top: 30px;
+  padding: 30px;
+}
+.sidebar-container a {
+  font-size: 30px;
+  color: #eee;
+}
+
+.sidebar-container:hover {
+  left: 0;
+}
+
+.sidebar-item-m {
+  position: absolute;
+  left: 200px;
+  cursor: pointer;
+}
+
+.sidebar-item-i {
+  position: absolute;
+  cursor: pointer;
+}
+
+.sidebar-container:hover .sidebar-item-m {
+  left: 130px;
+}
+
+.sidebar-container:hover .sidebar-item-i {
+  animation: item-i 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ani-turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ani-plus-turn {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+    transform: scale(1.5);
+  }
+}
+@keyframes item-i {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(250px);
+    transform: skew(30deg, 0);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(110px);
+  }
+}
 .col-12 {
   width: 100%;
   height: 100%;
