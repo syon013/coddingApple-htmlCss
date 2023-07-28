@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="portfolio3.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/92185c3b8d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+        <nav class="main-navbar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-headphones-simple"></i>
+                        <p style="top:95px;">Services</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-flag"></i>
+                        <p style="top:145px;">Alerts</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <p style="top:195px;">Stats</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-container d-flex">
+
+            <div class="main-search">
+            
+                <div class="col-md-3 float-start nav-hidden">
+                    <input type="search" placeholder="Search">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="col-md-6 float-start d-md-block"></div>
+                    
+                <div class="col-md-3 float-end main-profile justify-content-center nav-hidden">
+                        <i class="fa-solid fa-bell">
+                            <span class="position-absolute translate-middle bg-danger main-badge">5</span>
+                        </i>
+                        <i class="fa-solid fa-envelope">
+                            <span class="position-absolute translate-middle bg-danger main-badge">9</span>
+                        </i>
+                        <p>Minny Park</p>
+                </div>
+                
+                <div class="navbar-toggleBtn">
+                    <a href="#">
+                        <i class="fas fa-bars"></i> 
+                    </a>
+                </div>
+            </div>
+    
+
+            <div class="main-box">
+                <h5>Dashboard</h5>
+
+                <div class="d-md-flex justify-content-center">
+                    <div class="box box-skyblue">
+                        <p>Earinings (Monthly)</p>
+                        <h4>$40,000</h4>
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <div class="box box-green">
+                        <p>Earinings (Annual)</p>
+                        <h4>$800,000</h4>
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="box box-blue">
+                        <p>Tasks</p>
+                        <h4>13</h4>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="box box-orange">
+                        <p>Requests</p>
+                        <h4>26</h4>
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </div>
+
+            <div class="d-md-flex m-3 flex-md-row">
+
+                <div class="col-md-8 ps-0 pe-md-3 pb-3">
+                    <div class="card ps-0 pe-0 border-0 shadow card-chart">
+                        <div class="card-header border-0 border-bottom">
+                        <h6 class="m-0 pt-2 pb-2 fw-bold">Earnings Overview</h6>
+                        </div>
+                        <canvas class="chart" id="myChart" ></canvas>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 pe-0 h-100 pb-3">
+                    <div class="card p-0 h-50 border-0 shadow">
+
+                        <div class="card-header border-0 border-bottom">
+                            <h6 class="m-0 pt-2 pb-2 fw-bold">Tasks</h6>
+                        </div>
+
+                        <ul class="list-group list-group-flush d-flex">
+                            <li class="list-group-item d-flex">
+                                <p class="p-0 m-0">Borrowed Items</p>
+                                <span class="badge text-bg-secondary ms-auto">14</span>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <p class="p-0 m-0">Trello requests</p>
+                                <span class="badge text-bg-secondary ms-auto">2</span>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <p class="p-0 m-0">Marked Comments</p>
+                                <span class="badge text-bg-secondary ms-auto">1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Monthly',
+                    fill: true,
+                    data: [0, 10, 5, 3, 20, 30, 45],
+                    backgroundColor: 'blue',
+                    borderColor: 'blue',
+                    borderWidth: 1,
+                    tension : 0.3,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
